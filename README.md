@@ -20,7 +20,7 @@ An interactive web-based tool for analyzing **differential gene expression (DGE)
 
 ---
 
-## Try it Online
+## Run the App Online
 
 This application is deployed via **Streamlit Community Cloud**:
 
