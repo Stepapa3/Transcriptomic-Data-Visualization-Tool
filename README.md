@@ -1,4 +1,4 @@
-# Transcriptomic-Data-Visualization-Tool
+# Transcriptomic Data Visualization Tool
 
 An interactive web-based tool for analyzing **differential gene expression (DGE)** and visualizing transcriptomic data. Built using Python and Streamlit, this application is designed for biologists and bioinformaticians who need an easy-to-use interface for interpreting RNA-seq count data.
 
@@ -41,7 +41,7 @@ cd Transcriptomic-Data-Visualization-Tool
 ### 2. Create a virtual environment (recommended):
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+.venv\Scripts\activate # For Windows
 ```
 
 ### 3. Install dependencies:
