@@ -8,7 +8,7 @@ st.set_page_config(layout="wide")
 
 st.title("Differential Gene Expression Analysis")
 
-if "dge_done" not in st.session_state:
+if not st.session_state["dge_done"]:
     st.markdown("*To run the analysis, please select the inputs in the sidebar and click the 'Run DGE Analysis' button.*")
 
 # Check if count matrix and metadata are loaded in session state

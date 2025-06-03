@@ -66,6 +66,7 @@ if "count_matrix" in st.session_state:
                 st.stop()
             st.session_state["metadata"] = metadata
             st.session_state["metadata_ready"] = True
+            st.session_state["dge_done"] = False
             st.success("Metadata saved successfully.")
             st.session_state["new_metadata"] = default_metadata.copy()
             csv = metadata.reset_index().to_csv(index=False).encode("utf-8")
@@ -124,6 +125,7 @@ if "count_matrix" in st.session_state:
                         st.stop()
                     st.session_state["metadata"] = metadata
                     st.session_state["metadata_ready"] = True
+                    st.session_state["dge_done"] = False
                     st.success("Metadata updated successfully.")
                     csv = metadata.reset_index().to_csv(index=False).encode("utf-8")
                     st.download_button("Download Metadata CSV", data=csv, file_name="edited_metadata.csv", mime="text/csv")
