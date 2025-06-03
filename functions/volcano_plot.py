@@ -28,13 +28,16 @@ def volcano_plot(results, pval_threshold, lfc_threshold, comp_label):
         )
     )
 
+    # Replace padj = 0 with a very small value to avoid -log10(0)
+    padj_safe = results["padj"].clip(lower=1e-300)
+
     # Create plot
     fig, ax = plt.subplots(figsize=(8, 6))
 
     # Scatter: log2FC on X-axis, -log10(padj) on Y-axis
     ax.scatter(
         results["log2FoldChange"],
-        -np.log10(results["padj"]),
+        -np.log10(padj_safe),
         c=colors,
         alpha=0.6
     )
