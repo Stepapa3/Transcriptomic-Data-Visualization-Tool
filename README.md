@@ -66,6 +66,7 @@ This will start the app in your browser.
 More details and examples are available directly in the app under the **Help** section.
 
 > Example input files are provided in the `test_files` folder within this repository. You can use them to try the tool without preparing your own data.
+> The file genes_file.txt is used for creating a heatmap with user-selected genes within the **Visualization** page.
 ---
 
 ## Requirements
