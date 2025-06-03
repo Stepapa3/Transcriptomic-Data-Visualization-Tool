@@ -148,7 +148,12 @@ with st.expander("🧬 Differential Gene Expression"):
 
     ### 🔹 Output includes:
     - Full DGE result table with:
-        - `baseMean`, `log2FoldChange (LFC)`, `p-value`, `adjusted p-value (padj)`
+        - `baseMean`: average normalized expression of the gene across all samples.
+        - `log2FoldChange`: log base 2 of the fold change between the compared conditions; indicates the direction and magnitude of differential expression.
+        - `lfcSE`: standard error of the log2 fold change estimate; reflects the uncertainty of the l2FC value.
+        - `stat`: test statistic value used for hypothesis testing (Wald test).
+        - `p-value`: raw (unadjusted) p-value testing the null hypothesis that there is no difference in expression.
+        - `adjusted p-value (padj)`: p-value adjusted for multiple testing using the Benjamini-Hochberg method; used to identify statistically significant differentially expressed genes.
     - An interactive data table with options to:
         - Search by gene
         - Sort by any column
