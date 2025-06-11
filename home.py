@@ -13,6 +13,10 @@ st.write("### Upload your files here to start.")
 # Layout: two columns for uploading files
 col1, col2 = st.columns(2)
 
+if "dge_done" not in st.session_state:
+    st.session_state["dge_done"] = False
+
+
 # -------- Upload count matrix --------
 with col1:
     count_matrix_file = st.file_uploader(
