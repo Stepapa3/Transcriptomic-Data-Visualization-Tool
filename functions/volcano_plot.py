@@ -45,7 +45,7 @@ def volcano_plot(results, pval_threshold, lfc_threshold, comp_label):
     # Axis labels and title
     ax.set_xlabel("log2 Fold Change")
     ax.set_ylabel("-log10 Adjusted p-value")
-    ax.set_title(f"MA Plot ({comp_label.replace('_', ' ')})")
+    ax.set_title(f"Volcano Plot ({comp_label.replace('_', ' ')})")
 
     # Draw thresholds
     ax.axhline(
