@@ -50,7 +50,7 @@ def custom_heatmap(selected_genes, average_counts, row_cluster, col_cluster):
     # Set axis labels and the title of the plot
     g.ax_heatmap.set_xlabel("Condition")
     g.ax_heatmap.set_ylabel("Gene")
-    g.fig.suptitle("Heatmap of selected genes", y=1.02)
+    g.fig.suptitle("Heatmap of Selected Genes", y=1.02)
     # Apply dynamically calculated font size to gene labels
     g.ax_heatmap.set_yticklabels(g.ax_heatmap.get_yticklabels(), fontsize=fontsize)
 
