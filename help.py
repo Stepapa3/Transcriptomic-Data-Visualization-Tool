@@ -211,12 +211,13 @@ with st.expander("🖼️ Visualization"):
 
     The condition order is automatically determined based on metadata values, but can be **manually adjusted** before creating the table.
     
-    💡 Tip
+    ### 💡 Tip
     All plots can be downloaded by right-clicking on the figure and selecting “Save image as…” from the context menu. 
     This allows users to store figures directly from the interface.
-    ---
+    
     **🛠 Issues & troubleshooting:**
     - *“None of the selected genes are present in the count matrix.”* → Ensure gene names in TXT file match exactly with the count matrix gene names.
     """)
 
 st.success("You can return to this page at any time for guidance.")
+
